@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Drag & Drop!</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/jquery-ui.min.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+  </head>
+  <body>
+    <div class = "modal fail">
+      <p>Try again</p>
+      <img src = "images/sad.svg" alt="Sad face">
+    </div>
+    <div class = "modal success">
+      <p>Congratulations!</p>
+      <img src = "images/smile.svg" alt="Happy face">
+    </div>
+    <div class = "container">
+      <header>
+        <h1>Drag & Drop</h1>
+        <nav>
+          <img src="images/redo.png" class = "reset" alt = "Reset">
+        </nav>
+      </header>
+      <p>Drag shapes from the left column to the corresponding shapes in the right column.</p>
+      <div class="content">
+        <section>
+          <div class="item square drag"></div>
+          <div class="item donut drag"></div>
+          <div class="item diamond drag"></div>
+          <div class="item ball drag"></div>
+        </section>
+        <section>
+          <div class="item diamond drop"></div>
+          <div class="item square drop"></div>
+          <div class="item ball drop"></div>
+          <div class="item donut drop"></div>
+        </section>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="script/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+  </body>
+</html>
